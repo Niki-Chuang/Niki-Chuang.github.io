@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>Blog开发日志之一 | Secret Garden</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="第一次更换Theme中学到的经验： 1）Gitbub库中的子模块(submodule)貌似不能直接通过pull request的方式分享给其他用户。如果需要该模块，必须单独clone。子模块从其他开发者的库中直接clone而来。可能由于GitHub的防盗版功能，其分享受限制； 2）子模块中的.git文件夹最好删除，不然可能会出现上传错误的可能。.git文件夹包含GitHub的仓库与本地的连接信息。">
+<meta name="keywords" content="Blog开发日志">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blog开发日志之一">
+<meta property="og:url" content="http://zhenghaocc.com/2019/07/23/Blog开发日志之一/index.html">
+<meta property="og:site_name" content="Secret Garden">
+<meta property="og:description" content="第一次更换Theme中学到的经验： 1）Gitbub库中的子模块(submodule)貌似不能直接通过pull request的方式分享给其他用户。如果需要该模块，必须单独clone。子模块从其他开发者的库中直接clone而来。可能由于GitHub的防盗版功能，其分享受限制； 2）子模块中的.git文件夹最好删除，不然可能会出现上传错误的可能。.git文件夹包含GitHub的仓库与本地的连接信息。">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-23T09:11:13.520Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Blog开发日志之一">
+<meta name="twitter:description" content="第一次更换Theme中学到的经验： 1）Gitbub库中的子模块(submodule)貌似不能直接通过pull request的方式分享给其他用户。如果需要该模块，必须单独clone。子模块从其他开发者的库中直接clone而来。可能由于GitHub的防盗版功能，其分享受限制； 2）子模块中的.git文件夹最好删除，不然可能会出现上传错误的可能。.git文件夹包含GitHub的仓库与本地的连接信息。">
+  
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+</html>
+<body style="
+
+
+  background-color: #eff0f6
+
+">
+  <div id="container">
+    <nav id="nav">
+  <header class="header">
+    <a href="/" class="title">Clover Tuan</a>
+  </header>
+  <div class="ctnWrap">
+    <div class="icons">
+      
+        
+          
+            <a href="https://dribbble.com/clovertuan" target="_blank" class="nav-icn iconfont icon-dribbble"></a>
+          
+        
+          
+            <a href="https://www.behance.net/clovertuan" target="_blank" class="nav-icn iconfont icon-behance"></a>
+          
+        
+          
+            <a href="http://clovertuan.lofter.com/" target="_blank" class="nav-icn iconfont icon-lofter"></a>
+          
+        
+          
+            <a href="https://www.instagram.com/clovertuan/" target="_blank" class="nav-icn iconfont icon-instagram"></a>
+          
+        
+          
+            <a href="https://github.com/cloverTuan" target="_blank" class="nav-icn iconfont icon-github"></a>
+          
+        
+      
+    </div>
+    <div class="menu">
+      
+        
+            <a href="/" class="nav-menu ">HOME</a>
+          
+        
+            <a href="/archives" class="nav-menu ">ARCHIVE</a>
+          
+        
+            <a href="/about" class="nav-menu ">ABOUT</a>
+          
+        
+      
+    </div>
+  </div>
+</nav>
+    <div id="main"><section class="article">
+  <h2 class="title">Blog开发日志之一</h2>
+  <p class="sub">Jul 23, 2019</p>
+  <article class="content">
+    <p>第一次更换Theme中学到的经验：</p>
+<p>1）Gitbub库中的子模块(submodule)貌似不能直接通过pull request的方式分享给其他用户。如果需要该模块，必须单独clone。子模块从其他开发者的库中直接clone而来。可能由于GitHub的防盗版功能，其分享受限制；</p>
+<p>2）子模块中的.git文件夹最好删除，不然可能会出现上传错误的可能。.git文件夹包含GitHub的仓库与本地的连接信息。由于子模块由其他用户开发，可能无法直接上传至自己的仓库。建议使用cmd输入命令删除：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ del /F /Q /A /S .git</span><br></pre></td></tr></table></figure>
+
+<p>3）Hexo自带的deploy功能使得我们无需使用GitHub的四连上传，生成的网页文件会自动更新到GitHub的仓库。上传到哪一个仓库可通过_config.yml中的deploy修改。</p>
+<p>by 猪猪</p>
+
+  </article>
+  <footer class="f-cf">
+    
+    
+      <a href="/2019/07/23/第一次修改主题/" class="link f-fr">第一次修改主题⟶</a>
+    
+  </footer>
+</section></div>
+    <footer id="footer" class="f-cf">
+  d.guangying@foxmail.com
+  
+    
+      
+        · <a href="https://dribbble.com/clovertuan" target="_blank" class="nav-icn">Dribbble</a>
+      
+    
+      
+        · <a href="https://www.behance.net/clovertuan" target="_blank" class="nav-icn">Behance</a>
+      
+    
+      
+        · <a href="http://clovertuan.lofter.com/" target="_blank" class="nav-icn">Lofter</a>
+      
+    
+      
+        · <a href="https://www.instagram.com/clovertuan/" target="_blank" class="nav-icn">Instagram</a>
+      
+    
+      
+        · <a href="https://github.com/cloverTuan" target="_blank" class="nav-icn">GitHub</a>
+      
+    
+  
+  <span class="copyright">All rights reserved @Clover Tuan</span>
+</footer>
+  </div>
+</body>
+</html>
